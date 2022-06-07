@@ -128,7 +128,7 @@ class App {
       this._renderWorkout(wOut);
       this._renderWorkoutMarker(wOut);
     });
-    toastMessage("app loaded");
+    toastMessage("👆 Click on the map to track your workout.");
     this._renderCurrentLocationMarker(this.curLoc);
   }
   _showForm(mapE) {
@@ -222,7 +222,7 @@ class App {
 
     // set workout to localstorage
     this._setLocalStorage();
-    toastMessage("record added");
+    toastMessage("Map updated");
   }
 
   _renderCurrentLocationMarker(position) {
@@ -433,5 +433,5 @@ function toastMessage(msg) {
   document.querySelector("body").append(toastContainer);
   setTimeout(() => {
     toastContainer.remove();
-  }, 1500);
+  }, 2000);
 }

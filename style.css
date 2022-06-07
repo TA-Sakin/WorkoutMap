@@ -1,7 +1,7 @@
 :root {
   --color-brand--1: #ffb545;
   --color-brand--2: #00c46a;
-  --color-brand--3: #c70501;
+  --color-brand--3: #00c46a;
 
   --color-dark--1: #2d3439;
   --color-dark--2: #42484d;
@@ -312,11 +312,13 @@ a:visited {
 .btn--clear-all {
   margin-top: 2rem;
   cursor: pointer;
-  background: #00c46a;
+  background: var(--color-brand--3);
   padding: 1rem;
   outline: none;
+  border-radius: 25px;
   border: none;
   color: white;
+  font-weight: 600;
   transition: all 0.25s;
 }
 .btn--clear-all:hover,
