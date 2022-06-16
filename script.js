@@ -90,15 +90,15 @@ class App {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(this._loadMap.bind(this), () => {
         errorMessage(
-          "I couldn't get your current location.\r\nDefault location: Phnom Penh, Cambodia."
+          "Couldn't get your current location.\r\nSetting your default location: Dhaka, Bangladesh."
         );
-        const phnomPenh = {
+        const dhakaBD = {
           coords: {
-            latitude: 11.55,
-            longitude: 104.91667,
+            latitude: 23.7806365,
+            longitude: 90.4193257,
           },
         };
-        this._loadMap(phnomPenh);
+        this._loadMap(dhakaBD);
       });
     }
   }
