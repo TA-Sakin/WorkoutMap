@@ -1,2 +1,3 @@
 # WorkoutMap - Map your workout
-Please allow your location and click on the map to track your activities.
+I did this project following the [complete javascript course](https://github.com/jonasschmedtmann/complete-javascript-course) by Jonas Schmedtmann.
+I did some additional changes like deleted workout form, updated error message etc.
